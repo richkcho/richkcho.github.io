@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>League of Tilt</title>
+
+    <!-- Load Google Font -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,400italic,700' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC&effect=outline' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&effect=outline' rel='stylesheet' type='text/css'>
+
+    <!-- CSS libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/radar-chart.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+    <!-- Custom CSS code -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<section class="hero" id="top">
+    <div class="row intro">
+        <h1 class="font-effect-outline">Learn from the Pros</h1>
+        <h3 class="font-effect-outline">Improve your play and climb the ladder by learning from high ELO players!</h3>
+    </div>
+</section>
+
+<div id="header">
+    <div id="navWrap">
+        <div id="nav">
+            <ul>
+                <li><a href="#top" class="smoothScroll">Main Page</a></li>
+                <li><a href="#profile-break" class="smoothScroll">Player Profiles</a></li>
+                <li><a href="#profile-break1" class="smoothScroll">Map Visualization</a></li>
+                <li><a href="#profile-break2" class="smoothScroll">Radar Chart Visualization</a></li>
+                <li><a href="#profile-break3" class="smoothScroll">Interactive Heatmap</a></li>
+            </ul>
+            <br class="clearLeft" />
+        </div>
+    </div>
+</div>
+
+<div id="viz-intro-header">
+    <h1>Visualization Introduction</h1>
+    <!--<h5>Click on a description for a link to a complete player profile</h5>-->
+</div>
+
+<div id="viz-intro">
+    <p>
+        The fast-paced, competitive online game League of Legends draws nearly 27 million unique players daily. 2 teams of 5 players control powerful champions to battle head-to-head across a battlefield. Each player is given a unique role across the map - [Top Lane, Jungle, Mid Lane, ADC and Support]
+    </p>
+    <p>
+        League of Legends is an incredibly strategic game. One can learn strategy and tactics by observing the patterns and playstyles of professional and semi-professional players. Our visualization allows people to access and interface with pro players data so that regular players can learn more efficiently.
+    </p>
+    <p>
+        Search through our database for your favorite player or pick from our suggested profiles below.
+        For our interactive map, input the player's ingame-tag ("Quoted-Name" in the Player Profiles section), select a role to view the map movements.
+        For our radar chart plot, input up to 3 ingame-tags to compare the players against each other. The orange polygon always represents the mean data of all the players in our dataset.
+    </p>
+</div>
+
+<div id="glossary-header">
+    <h1>Glossary of Terms</h1>
+</div>
+
+<div id="glossary">
+    <p>
+        <b>Roles:</b> League of Legends are divided into 5 roles. TOP, JUNGLE, MID, ADC and SUPPORT. Similar to other sports, each role has a unique and specialized playstyle. A player specializes in one role and sticks to it. As a result, a MID player will likely have better statistics playing the MID role than playing the SUPPORT role.
+    </p>
+    <p>
+        <b>Gold:</b> Killing minions and other players in League of Legends earns the player gold. You can use your gold earned to buy weapons and upgrades for your champion. One metric of a player's skill is how much gold a player has earned in a game.
+    </p>
+    <p>
+        <b>Kill-Death-Ratio (K/D/A):</b> Throughout the course of a game, a player will rack up kills and accumulate deaths. One metric of a player's skill is the kill-death ratio.
+    </p>
+</div>
+
+<div id="profile-break">
+    <br/>
+</div>
+
+<div id="player-profile-header">
+    <h1>Player Profiles</h1>
+</div>
+
+<hr class="prof-sep">
+
+<div id="wrapper">
+    <div id="columns">
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/double.jpg" />
+                <h4>Doublelift "Doublelift" (ADC)</h4>
+                <p>
+                    Doublelift is an AD carry who currently plays for Team Solo Mid. Widely regarded as one of the world's best, Doublelift is also noted for his controversial personality - he loves to make matchups more exciting by trash-talking.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/sneaky.jpg" />
+                <h4>Sneaky "C9 Sneaky" (ADC)</h4>
+                <p>
+                    Sneaky currently plays AD carry for Cloud 9, an NA team that enjoyed great success their first year in the LCS. Sneaky doesn't pander much to the media, but says all that needs to be said through his continually dominant performance as one of the strongest ADCs in NA.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/bjergsen.jpg" />
+                <h4>Bjersen "mid is sucess" (MID)</h4>
+                <p>
+                    The Danish import, Bjergsen, moved from the Copenhagen Wolves to Team Solo Mid in 2014. Widely heralded as one of the best midlaners in the world, he boasts an aggressive playstyle and tends to dominate midlane. His signature champions are Zed and Leblanc.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/huni.jpeg" />
+                <h4>Huni "ADC Huni" (TOP)</h4>
+                <p>
+                    After starting his career at Samsung in the Korean LCK, Huni moved to Europe where he enjoyed a wildly successful 2015 Season with Fnatic. After a strong run at worlds, Fnatic disbanded and Huni found himself once again relocated, this time to the fan favorite Immortals team in North America.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/darshan.jpg" />
+                <h4>Darshan "ZionSpartan" (TOP)</h4>
+                <p>
+                    Darshan (better known by his old alias, ZionSpartan) currently plays for CLG. He was one of the first players to popularize the top lane carry meta which has since been replaced largely by tanks. Every once in a while he will still be seen playing his signature champions such as Jax and Nasus.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/rush.jpg" />
+                <h4>Rush "Rush" (JUNGLE)</h4>
+                <p>
+                    Rush moved from Korea to join Cloud 9 and was met with awe as he climbed to the very top of the NA solo queue ladder within the first week. He has been a successful replacement for Cloud 9's popular jungler Meteos, who retired last year.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/wildTurtle.jpg" />
+                <h4>WildTurtle "WildTurtle" (ADC)</h4>
+                <p>
+                    WildTurtle received harsh criticism towards the end of the 2015 split because he was underperforming compared to the rest of Team Solo Mid. His move to Immortals in 2016 silenced those critics. Since the move he has been an integral part of the Immortal's 17-1 2016 spring split.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/impact.jpg" />
+                <h4>Impact "Impact" (TOP)</h4>
+                <p>
+                    After winning the world championship with SKT in 2014, Impact moved to Team Impulse in NA. Now with his new team NRG eSports, Impact has recently been criticized for his failure to smoothly transition into the tank meta since the start of the 2016 season.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/piglet.jpg" />
+                <h4>Piglet "GodPiglet" (ADC)</h4>
+                <p>
+                    A former teammate of Impact on SK Telecom, Piglet followed Impact's lead and moved to North America after the dissolution of the team. Piglet is one of the most mechanically gifted AD carries in the world, known for his play on late-game hyperscalers such as Vayne and Lucian.
+                </p>
+            </div>
+        </a>
+
+        <a class="smoothScroll2">
+            <div class="pin">
+                <img src="img/kiwikid.jpg" />
+                <h4>KiWiKiD "KiWiKiD" (SUPPORT)</h4>
+                <p>
+                    Kiwikid is the only remaining member of the original Dignitas roster. While he isn't known for flashy plays and huge highlight reels, Kiwikid is an outstandingly consistent player who makes few mistakes and works behind the scenes to help carry Dignitas to victory. After being relegated, he was quoted saying, "It was the end of a good thing and I can just move on."
+                </p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div id="profile-break1">
+        <br/>
+    </div>
+
+    <div class="row">
+        <h1 class="section-title">Interactive Map</h1>
+    </div>
+
+    <hr class="prof-sep">
+
+    <p>We designed the interactive map specifically so that users would have the capability to explore map movement trends over the course of games for specific players. For example, load up Dyrus in the position "TOP". This visualization will help us understand the current state of the game. If you'd like to test the visualization, run it for the full game. You'll see Dyrus' map movements evolve as the game progresses. We, however, are interested to see if we can break it down a bit further than that.</p>
+    <br/>
+    <p>Narrowing the time range to 1-10 minutes can be quite revealing. What we see is that Dyrus' position bounces between the top lane and the middle and bottom lanes. Because of the structure of the data, we needed to interpolate map movements, but what those forays from the top lane actually represent are most likely teleports. Dyrus is using Teleport to assist his other lanes. This is very revealing of the current prevailing play style: isolate your top laner but ensure that he or she has teleport ready to assist other lanes in case they come under pressure from ganks or from mid lane roams.</p>
+    <br/>
+    <p>Now change the time range to 15-25 minutes to contrast the mid-game with the early-game. Here we see that Dyrus spends his time distributed throughout the map. This is most likely because players tend to group during the mid-game around timings that their characters are strong (when they complete a strong item, or reach a certain level to unlock an important ability, etc.). This also allows them to start accruing global gold and advantages from taking objectives around the map as a team.</p>
+    <br/>
+    <p>We should be able to answer a whole bunch of questions just by looking at this map. For example, what time does lane phase usually break down? Do certain players put more emphasis on lane dominance than grouping with their team? Try it out and see what trends you can find!</p>
+
+    <div id="map-player-select" class="row">
+        <input type="text" id="summoner_name" class="auto" placeholder="Summoner Name">
+        <select id="role_selected">
+            <option value="any">Any</option>
+            <option value="top">Top</option>
+            <option value="jg">Jungle</option>
+            <option value="mid">Mid</option>
+            <option value="adc">ADC</option>
+            <option value="sup">Support</option>
+        </select>
+        <input type="button" id="btnRenderMapTimeAll" value="Load Full Game" onclick="renderMapOutputTimeAll()">
+        <input type="button" id="btnRenderMapTimeRegion" value="Load Time Region" onclick="renderMapOutputTimeRegion()">
+    </div>
+
+	<div id="map-vis-container" class="row">
+		<div class="col-md-6">
+			<div id="map-container"></div>
+		</div>
+		<div class="col-md-6">
+			<div id="map-radar-container"></div>
+		</div>
+	</div>
+
+    <div id="map-slider-container">
+        <div id="map-slider-div"></div>
+        <label for="map-slider-time">Time range:</label>
+        <input type="text" id="map-slider-time" readonly style="border:10px; color:#f6931f; font-weight:bold;" class="auto">
+    </div>
+
+    <div id="profile-break2">
+        <br/>
+    </div>
+
+    <div class="row">
+        <h1 class="section-title"> Radar Chart</h1>
+    </div>
+
+    <hr class="prof-sep">
+
+    <p>We played around with a few different ideas for how to compare player statistics. There are so many relevant statistics that the player comparison would have quickly become cluttered and difficult to read when comparing multiple players using a traditional statistical plot. Therefore we decided to use a radar chart.</p>
+    <br/>
+    <p>The reason that we created this particular chart is so that we could easily profile players based on a variety of important summary statistics. For example, if we look at Doublelift, we can easily categorize him as an aggressive player. He has dramatically more kills and generally higher gold per game than the average player. These types of insights will hopefully help players to categorize and imitate the playstyles of their favorite solo queue heroes.</p>
+    <br/>
+
+    <div id="outer-radar-container">
+        <input type="text" id="test_1" class="auto" placeholder="Summoner Name">
+        <input type="text" id="test_2" class="auto" placeholder="Summoner Name">
+        <input type="text" id="test_3" class="auto" placeholder="Summoner Name">
+        <input type="button" id="btnRenderRadar" value="Load Data" onclick="renderRadarOutput()">
+        <div id="radar-chart-container"></div>
+    </div>
+
+    <div id="profile-break3">
+        <br/>
+    </div>
+
+    <div class="row">
+        <h1 class="section-title">Interactive Heatmap</h1>
+    </div>
+
+    <hr class="prof-sep">
+
+    <p>The heatmap was a design decision that we made because while the previous two visualizations give a plethora of information about the flow of the game, we wanted to include a clear visualization of the two most important events in League of Legends: kills and deaths. The goal with the interactive heatmap is to allow viewers to examine when certain players play more aggressively, when it pays off, when it's risky, and where most players concentrate their efforts throughout different phases of the game.</p>
+    <br/>
+    <p>On this heatmap green dots represent kills and red dots represent deaths. We believe that this visualization pairs particularly well with the first two in order to decode summoner playstyles and map movements.</p>
+    <br/>
+
+    <div id="heatmap-player-select" class="row">
+        <input type="text" id="summoner_name_heatmap" placeholder="Summoner Name" class="auto">
+        <select id="role_selected_heatmap">
+            <option value="any">Any</option>
+            <option value="top">Top</option>
+            <option value="jg">Jungle</option>
+            <option value="mid">Mid</option>
+            <option value="adc">ADC</option>
+            <option value="sup">Support</option>
+        </select>
+        <input type="button" id="btnRenderHeatmapTimeAll" value="Load Full Game" onclick="renderHeatMapOutputTimeAll()">
+        <input type="button" id="btnRenderHeatmapTimeRegion" value="Load Time Region" onclick="renderHeatmapOutputTimeRegion()">
+    </div>
+    <div class="row">
+        <div id="heatmap-container"></div>
+    </div>
+    <div id="heatmap-slider-container">
+        <div id="heatmap-slider-div"></div>
+        <label for="heatmap-slider-time">Time range:</label>
+        <input type="text" id="heatmap-slider-time" readonly style="border:10px; color:#f6931f; font-weight:bold;" class="auto">
+    </div>
+</div>
+
+<!-- The main page content (just filler for this demo) -->
+<div id="body-text">
+</div>
+
+<!-- Load data, create visualizations -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3.tip.js"></script>
+<script src="js/d3-queue.v2.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/toy-data.js"></script>
+<script src="js/radar-chart.js"></script>
+<script src="js/radar-vis.js"></script>
+<script src="js/map-vis.js"></script>
+<script src="js/heatmap-vis.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/timeline.js"></script>
+
+<!-- Sticky NavBar Script -->
+<script>
+    $(document).ready(function() {
+        $("#nav").sticky({topSpacing:0});
+    });
+</script>
+
+<!-- Autocomplete script -->
+<script>
+    $(document).ready(function() {
+        var AvailableTags = [];
+        $.getJSON('data/player_id_name_map.json', function( data ) {
+            var items = [];
+            $.each( data, function( key, val ) {
+                items.push(val);
+            });
+            $(".auto").autocomplete({
+                source: items
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
